@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quintechs - MEA HR and Payroll</title>
+        <link rel="icon" href="img/QUINTECHS LOGO.png" type="image/png">
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/ionicons.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/owl.transitions.css">
+	    <link rel="stylesheet" href="css/animate.css">
+	    <link rel="stylesheet" href="css/custom.css">
+        
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                overflow-x: hidden; 
+            }
+            
+            /* --- Navigation Style Changes --- */
+            .navbar-default {
+                background-color: #ffffff !important; 
+            }
+            .navbar-default .navbar-nav > li > a {
+                color: #1abc9c !important; 
+            }
+            
+            .fa-lightbulb-o {
+                color: orange !important;
+            }
+            .fa-desktop {
+                color: green !important;
+            }
+			.fa-cloud {
+                color: blueviolet !important;
+			}
+            .fa-life-ring {
+                color: red !important;
+            }
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: #1abc9c !important; 
+            }
+            .navbar-brand img {
+                height: 50px;
+                margin-top: -5px; 
+                margin-right: 10px;
+            }
+            #footer {
+                background-color: #333;
+                color: #f0f0f0; 
+                padding: 20px 0;
+                width: 100%;
+                box-sizing: border-box;
+                margin: 0;
+            }
+            #footer .logo h1 {
+                color: #f0f0f0;
+            }
+            #footer .copyright p {
+                color: #ccc;
+            }
+            #footer .row [class*="col-"] {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            /* **CRITICAL FIX: ENSURE VERTICAL LISTS** */
+            #product_content ul {
+                list-style: disc inside; /* Ensure standard bullets are visible */
+                padding-left: 20px;     /* Ensure list indentation */
+                margin-top: 10px;
+            }
+            #product_content ul li {
+                display: list-item; /* Force list item to take up its own line */
+                margin-bottom: 5px; 
+                text-align: left;
+            }
+            /* END CRITICAL FIX */
+
+            /* Styling for the diagram */
+            #product_content .diagram-container {
+                text-align: center;
+                margin: 30px 0;
+            }
+            #product_content .diagram-container img {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+            
+            /* --- NEW STYLES FOR IMAGES --- */
+            .thumbnail-container {
+                margin-bottom: 20px;
+                cursor: pointer;
+                transition: transform 0.2s;
+            }
+            .thumbnail-container:hover {
+                transform: scale(1.05);
+            }
+            .thumbnail-container img {
+                width: 100%;
+                height: auto;
+                border: 1px solid #ddd;
+                padding: 5px;
+                background-color: #fff;
+            }
+            .modal-content {
+                background-color: transparent;
+                border: none;
+            }
+            .modal-body {
+                padding: 0;
+                text-align: center;
+            }
+            .modal-body img {
+                width: auto;
+                max-height: 90vh; 
+                max-width: 90vw;
+                border: 5px solid #fff;
+            }
+            .modal-header {
+                border-bottom: none;
+            }
+            .close {
+                color: #fff;
+                opacity: 1;
+                font-size: 40px;
+                text-shadow: 0 1px 0 #000;
+            }
+            .thumbnail-caption {
+                font-size: 13px; 
+                margin-top: 5px; 
+                color: #555;
+            }
+        </style>
+        </head>
+
+	<body>
+        
+			
+				<section id= "navigation">
+					<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	  					<div class="container-fluid">
+	    					<div class="navbar-header">
+    							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        							<span class="ion-navicon"></span>
+    							</button>
+    							<a class="navbar-brand" href="index.html">
+        							<img src="img/QUINTECHS LOGO.png" alt="QUINTECHS Logo">
+        							Quintechs
+    							</a>
+							</div>
+	    					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      					<ul class="nav navbar-nav navbar-right">
+		      						<li><a href="index.html#about">About Us</a></li>
+		      						<li><a href="index.html#our_service">Our Services</a></li>
+								<li><a href="index.html#our_products">Our Products</a></li>
+		        					<li><a href="index.html#team">Technologies</a></li>
+		        					<li style="display: none;"><a href="index.html#portfolio">Portfolio</a></li>
+		        					<li style="display: none;"><a href="index.html#price_table">Price Table</a></li>
+		        					<li style="display: none;"><a href="index.html#blog">Blog</a></li>
+		        					<li style="display: none;"><a href="index.html#testimonial">Testimonials</a></li>
+		        					<li><a href="index.html#contact">Contact us</a></li>
+							    </ul>
+	    					</div>	</div>	</nav>	
+				</section>
+        
+        <section id="product_content" style="padding-top: 100px; padding-bottom: 60px;">
+            <div class="container">
+                <div class="row text-center" id="heading">
+                    <div class="col-md-12 wow animated zoomInDown" id="heading-text">
+                        <h3>MEA HR and Payroll</h3>
+                        <p>Comprehensive Human Resources and Payroll Solution for Microsoft Dynamics 365</p>
+                        <hr class="full">
+                        <br/>
+                    </div>
+                </div>
+                <div class="row about-us-text">
+                    
+                    <div class="col-md-9" style="text-align: left;">
+                        
+                        <h4>Overview</h4>
+                        <p>A payroll system provides a high-level description of the payroll system used by an organization to manage employee compensation. This overview typically includes key features, processes, and components of the payroll system.</p>
+
+                        <h4 style="margin-top: 30px;">Key Features</h4>
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>Human Resources</h5>
+                                <ul>
+                                    <li>Human Resources Management</li>
+                                    <li>Organization Structure</li>
+                                    <li>Recruitment Management</li>
+                                    <li>Worker files and Employee Profile</li>
+                                    <li>Courses and Training</li>
+                                    <li>Performance Evaluation</li>
+                                    <li>Skill Mapping</li>
+                                    <li>Loan Equipment and custody</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12" style="margin-top: 20px;">
+                                <h5>Payroll</h5>
+                                <ul>
+                                    <li>Employee Contract</li>
+                                    <li>Salary Grade and level</li>
+                                    <li>Salary Calculation</li>
+                                    <li>Allowances</li>
+                                    <li>Sponsorship</li>
+                                    <li>Social Insurance & Security (GOSI)</li>
+                                    <li>Employee Medical Insurance</li>
+                                    <li>Employee Document</li>
+                                    <li>Leave and Tickets Management</li>
+                                    <li>Overtime Management</li>
+                                    <li>Absence and Late Management</li>
+                                    <li>Earning and Benefits/Deductions</li>
+                                    <li>Loans Management</li>
+                                    <li>Business Trip</li>
+                                    <li>End of service Management</li>
+                                    <li>Settlement Voucher</li>
+                                    <li>General Journal</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12" style="margin-top: 20px;">
+                                <h5>Employee Self-Service</h5>
+                                <ul>
+                                    <li>Leave Request</li>
+                                    <li>Return from vacation request</li>
+                                    <li>Letter request</li>
+                                    <li>Overtime request</li>
+                                    <li>End Of service request</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12" style="margin-top: 20px;">
+                                <h5>Enhanced Solutions</h5>
+                                <ul>
+                                    <li>Government Affairs</li>
+                                    <li>Business process (On-Boarding, Off-Boarding)</li>
+                                    <li>Human Resource Development Fund (HRDF)</li>
+                                    <li>Employee External & Internal Transfer</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4 style="margin-top: 30px;">Deployment</h4>
+                        <p>The product is built using Dynamics 365 Finance and Operations. A model will be provided and can be deployed through LCS.</p>
+                        <ul>
+                            <li>Current Application Release: Microsoft Dynamics 365 for Finance and Operations (10.0.35)</li>
+                            <li>Platform Release: Update59 (7.0.6972.121)</li>
+                            <li>Integration: Integration with external systems is supported using Rest APIs. Integration with Logic App / Power Automate is supported using business events.</li>
+                        </ul>
+
+                        <h4 style="margin-top: 30px;">Data Management</h4>
+                        <p>Our Payroll supports Data Management features to allow the upload of all employee information and other modules. We enhanced some functions to upload daily employee transactions, such as:</p>
+                        <ul>
+                            <li>Overtime mass creation</li>
+                            <li>Earning & Deduction mass creation</li>
+                            <li>Loan Mass Creation</li>
+                            <li>Absence mass creation</li>
+                        </ul>
+                        
+                        <h4 style="margin-top: 30px;">Support and Maintenance</h4>
+                        <p>Software Maintenance is categorized into four key areas (See diagram):</p>
+                         <ul>
+                            <li>Perfective: Monitoring and Bug Fixes.</li>
+                            <li>Corrective: To fix errors.</li>
+                            <li>Preventive: Includes Support.</li>
+                            <li>Adaptive: Includes Enhancements.</li>
+                        </ul>
+
+                        <div class="diagram-container">
+                            </div>
+
+                        <h4 style="margin-top: 30px;">Get Started</h4>
+                        <p>Ready to streamline your HR and Payroll? Contact us for a personalized demo or visit the Microsoft AppSource marketplace.</p>
+                        <p class="text-center">
+                             <a class="btn btn-primary btn-lg" href="#PRODUCT_MARKETPLACE_URL_PLACEHOLDER" target="_blank">View on Marketplace</a>
+                        </p>
+                        
+                    </div>
+                    
+                    <div class="col-md-3" style="padding-top: 40px;">
+                        <div class="row">
+                            
+                            <div class="col-xs-12 thumbnail-container">
+                                <a href="#" data-toggle="modal" data-target="#imageModal" data-img-src="img/mea-1.PNG" data-img-alt="MEA Payroll - All Features">
+                                    <img src="img/mea-1.PNG" alt="MEA Payroll - All Features" class="img-responsive">
+                                </a>
+                                <p class="text-center thumbnail-caption">MEA Payroll - All Features</p>
+                            </div>
+                            
+                            <div class="col-xs-12 thumbnail-container">
+                                <a href="#" data-toggle="modal" data-target="#imageModal" data-img-src="img/mea-2.png" data-img-alt="MEA Payroll - Expanded Menus">
+                                    <img src="img/mea-2.png" alt="MEA Payroll - Expanded Menus" class="img-responsive">
+                                </a>
+                                <p class="text-center thumbnail-caption">MEA Payroll - Expanded Menus</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+        <section id= "footer" class= "main-footer">
+			<div class= "row">
+				<div class= "col-xs-12 logo text-center">
+					<h1>Quintechs</h1>
+				</div>
+			</div>
+			<div class= "row">
+				<div class= "col-xs-12 text-center" style="margin-bottom: 10px;">
+					<p><a href="privacy.html" style="color: #f0f0f0; text-decoration: underline;">Privacy Policy</a></p>
+				</div>
+			</div>
+			<div class= "row">
+				<div class= "col-xs-12 copyright text-center">
+					<p> Copyright ©2025. All rights reserved.</p>
+				</div>
+			</div>
+		</section>
+        
+        <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document" style="display: flex; align-items: center; min-height: 100vh;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="" id="enlargedImage" class="img-responsive" alt="Enlarged Image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/owl.carousel.min.js"></script>
+	    <script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.actual.min.js"></script>
+        <script>
+            new WOW().init();
+            
+            // JQuery to handle the modal image source (INJECTED)
+            $('#imageModal').on('show.bs.modal', function (event) {
+              var a = $(event.relatedTarget); // Anchor tag that triggered the modal
+              var imgSrc = a.data('img-src'); // Extract info from data-img-src attribute
+              var imgAlt = a.data('img-alt'); // Extract info from data-img-alt attribute
+              var modal = $(this);
+              // Set the image source and alt text in the enlarged modal view
+              modal.find('#enlargedImage').attr('src', imgSrc).attr('alt', imgAlt);
+            });
+            
+        </script>
+        <script src="js/jquery-ui-1.10.3.min.js"></script>
+        <script src="js/jquery.knob.js"></script>
+        <script src="js/daterangepicker.js"></script>
+        <script src="js/bootstrap3-wysihtml5.all.min.js"></script>
+        <script src="js/dashboard.js"></script>
+       
+	</body>
+</html>
