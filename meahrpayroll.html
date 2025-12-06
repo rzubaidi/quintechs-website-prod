@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="css/owl.carousel.css">
 		<link rel="stylesheet" href="css/owl.theme.css">
 		<link rel="stylesheet" href="css/owl.transitions.css">
-	    <link rel="stylesheet" href="css/animate.css">
 	    <link rel="stylesheet" href="css/custom.css">
         
         <style>
@@ -21,6 +20,8 @@
                 padding: 0;
                 width: 100%;
                 overflow-x: hidden; 
+                /* NEW: Set a consistent font family for all text */
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
             
             /* --- Navigation Style Changes --- */
@@ -177,7 +178,7 @@
         <section id="product_content" style="padding-top: 100px; padding-bottom: 60px;">
             <div class="container">
                 <div class="row text-center" id="heading">
-                    <div class="col-md-12 wow animated zoomInDown" id="heading-text">
+                    <div class="col-md-12" id="heading-text">
                         <h3>MEA HR and Payroll</h3>
                         <p>Comprehensive Human Resources and Payroll Solution for Microsoft Dynamics 365</p>
                         <hr class="full">
@@ -188,10 +189,10 @@
                     
                     <div class="col-md-9" style="text-align: left;">
                         
-                        <h4>Overview</h4>
+                        <h4>1. Overview</h4>
                         <p>A payroll system provides a high-level description of the payroll system used by an organization to manage employee compensation. This overview typically includes key features, processes, and components of the payroll system.</p>
 
-                        <h4 style="margin-top: 30px;">Supported Countries</h4>
+                        <h4 style="margin-top: 30px;">2. Supported Countries</h4>
                         <div class="row">
                             <div class="col-md-12">
                                 <ul>
@@ -206,7 +207,7 @@
                             </div>
                         </div>
 
-                        <h4 style="margin-top: 30px;">Key Features</h4>
+                        <h4 style="margin-top: 30px;">3. Key Features</h4>
                         
                         <div class="row">
                             <div class="col-md-12">
@@ -273,7 +274,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <h4 style="margin-top: 30px;">Deployment</h4>
+                        <h4 style="margin-top: 30px;">4. Deployment</h4>
                         <p>The product is built using Dynamics 365 Finance and Operations. A model will be provided and can be deployed through LCS.</p>
                         <ul>
                             <li>Current Application Release: Microsoft Dynamics 365 for Finance and Operations (10.0.35)</li>
@@ -281,7 +282,7 @@
                             <li>Integration: Integration with external systems is supported using Rest APIs. Integration with Logic App / Power Automate is supported using business events.</li>
                         </ul>
 
-                        <h4 style="margin-top: 30px;">Data Management</h4>
+                        <h4 style="margin-top: 30px;">5. Data Management</h4>
                         <p>Our Payroll supports Data Management features to allow the upload of all employee information and other modules. We enhanced some functions to upload daily employee transactions, such as:</p>
                         <ul>
                             <li>Overtime mass creation</li>
@@ -290,7 +291,7 @@
                             <li>Absence mass creation</li>
                         </ul>
                         
-                        <h4 style="margin-top: 30px;">Support and Maintenance</h4>
+                        <h4 style="margin-top: 30px;">6. Support and Maintenance</h4>
                         <p>Software Maintenance is categorized into four key areas:</p>
                          <ul>
                             <li>Perfective: Monitoring and Bug Fixes.</li>
@@ -302,7 +303,7 @@
                         <div class="diagram-container">
                             </div>
 
-                        <h4 style="margin-top: 30px;">Get Started</h4>
+                        <h4 style="margin-top: 30px;">7. Get Started</h4>
                         <p>Ready to streamline your HR and Payroll? Contact us for a personalized demo or visit the Microsoft AppSource marketplace.</p>
                         <p class="text-center">
                              <a class="btn btn-primary btn-lg" href="#PRODUCT_MARKETPLACE_URL_PLACEHOLDER" target="_blank">View on Marketplace</a>
@@ -331,23 +332,93 @@
                     </div>
             </div>
         </section>
-        <section id= "footer" class= "main-footer">
-			<div class= "row">
-				<div class= "col-xs-12 logo text-center">
-					<h1>Quintechs</h1>
-				</div>
-			</div>
-			<div class= "row">
-				<div class= "col-xs-12 text-center" style="margin-bottom: 10px;">
-					<p><a href="privacy.html" style="color: #f0f0f0; text-decoration: underline;">Privacy Policy</a></p>
-				</div>
-			</div>
-			<div class= "row">
-				<div class= "col-xs-12 copyright text-center">
-					<p> Copyright ©2025. All rights reserved.</p>
-				</div>
-			</div>
-		</section>
+			<style>
+/* 1. Default state: Dimmed gray color for both social icons (slightly lighter than text color) */
+.social-icons-footer a {
+    color: #888 !important; /* Dimmed gray color for effect */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* 2. Hover state: Social Icons (LinkedIn Blue & Microsoft Blue) */
+.social-icons-footer a[title="LinkedIn Profile"]:hover {
+    color: #0077B5 !important; 
+}
+.social-icons-footer a[title="Microsoft Partner Profile"]:hover {
+    color: #0078D7 !important; 
+}
+
+/* 3. Hover state: All Footer Links (Links section and Email/Phone links) - Changes link color to White */
+.col-md-3 ul a:hover,
+.col-md-3 p a:hover {
+    color: #fff !important; 
+}
+</style>
+
+<section id= "footer" class= "main-footer">
+    <div class="container">
+        <div class="row" style="padding-top: 30px; padding-bottom: 30px; text-align: left;">
+            
+            <div class="col-md-6 col-sm-12">
+                <h3 style="color: #f0f0f0; margin-top: 0; margin-bottom: 20px; font-size: 20px;">Quintechs Information Technology</h3>
+                
+                <p style="color: #777; margin-bottom: 25px; font-size: 14px;">
+                    We are dedicated Microsoft Partners, delivering innovative solutions in Information Technology, Dynamics 365, Power Platform, and Cloud Services to drive digital success for businesses globally.
+                </p>
+                <div class="social-icons-footer" style="display: flex; align-items: center;">
+                    <a href="https://www.linkedin.com/company/quintechs/" target="_blank" style="font-size: 24px; margin-right: 15px; display: inline-block; line-height: 1;" data-toggle="tooltip" title="LinkedIn Profile">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://marketplace.microsoft.com/en-us/marketplace/partner-dir/2f887acf-d89c-4740-bc62-e2f9807ab0a8/overview" target="_blank" style="font-size: 24px; margin-right: 15px; display: inline-block; line-height: 1;" data-toggle="tooltip" title="Microsoft Partner Profile">
+                        <i class="fa fa-windows"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-12" style="padding-left: 30px;">
+                <h3 style="color: #f0f0f0; margin-top: 0; margin-bottom: 20px; font-size: 20px;">Contact Information</h3>
+                
+                <p style="color: #777; margin-bottom: 15px; font-size: 14px;">
+                    <i class="fa fa-map-marker" style="margin-right: 10px; color: #FF5733;"></i>
+                    Abu Al Haj Complex, Queen Rania Street, Amman, Jordan
+                </p>
+                
+                <p style="color: #777; margin-bottom: 15px; font-size: 14px;">
+                    <i class="fa fa-phone" style="margin-right: 10px; color: #3498db;"></i>
+                    <a href="tel:+962797226030" style="color: #777; text-decoration: none; display: inline;">+962 79722 6030</a>
+                </p>
+
+                <p style="color: #777; font-size: 14px;">
+                    <i class="fa fa-envelope-o" style="margin-right: 10px; color: #1abc9c;"></i>
+                    <a href="mailto:info@quintechs.com" style="color: #777; text-decoration: none; display: inline; font-size: 14px;">info@quintechs.com</a>
+                </p>
+            </div>
+
+            <div class="col-md-3 col-sm-12" style="padding-left: 30px;">
+                <h3 style="color: #f0f0f0; margin-top: 0; margin-bottom: 20px; font-size: 20px;">Links</h3>
+                <ul style="padding: 0; list-style-type: none;">
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#about" style="color: #777; text-decoration: none; display: block; font-size: 14px;">About Us</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#our_service" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Our Services</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#our_products" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Our Products</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#team" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Technologies</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#contact" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Contact Us</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="privacy.html" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class= "row" style="border-top: 1px solid #333; padding-top: 15px; padding-bottom: 5px; margin-left: 0; margin-right: 0;">
+        <div class= "col-xs-12 copyright text-center">
+            <p style="color: #777; margin-bottom: 5px; font-size: 14px;">
+                Copyright &copy;2025. All rights reserved.
+            </p>
+            <p style="color: #777; font-size: 14px;">
+                جميع الحقوق محفوظة &copy;2025 لدى شركة الحلول الكبرى لتكنولوجيا المعلومات ذات مسؤولية محدودة
+            </p>
+        </div>
+    </div>
+</section>
         
         <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document" style="display: flex; align-items: center; min-height: 100vh;">
@@ -370,11 +441,8 @@
 	    <script src="js/owl.carousel.min.js"></script>
 	    <script src="js/isotope.pkgd.min.js"></script>
 		<script src="js/script.js"></script>
-		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.actual.min.js"></script>
         <script>
-            new WOW().init();
-            
             // JQuery to handle the modal image source (INJECTED)
             $('#imageModal').on('show.bs.modal', function (event) {
               var a = $(event.relatedTarget); // Anchor tag that triggered the modal
@@ -391,8 +459,7 @@
         <script src="js/daterangepicker.js"></script>
         <script src="js/bootstrap3-wysihtml5.all.min.js"></script>
         <script src="js/dashboard.js"></script>
-       <!-- Demo Popup Modal -->
-<style>
+       <style>
 #msFormModal {
   display:none;
   position:fixed;
@@ -475,7 +542,6 @@ window.onclick=function(e){
   }
 </style>
 
-<!-- Popup Modal Styles -->
 <style>
   #demoModal {
     display: none;
@@ -512,6 +578,4 @@ window.onclick=function(e){
 
 <a href="#" class="demo-btn" onclick="openMicrosoftForm()">Request a Demo</a>
 
-	</body><!-- Add the floating Request a Demo button anywhere on the page -->
-
-</html>
+	</body></html>

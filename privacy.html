@@ -109,7 +109,7 @@
         <section id="privacy_policy_content" style="padding-top: 100px; padding-bottom: 60px;">
             <div class="container">
                 <div class="row text-center" id="heading">
-                    <div class="col-md-6 col-md-offset-3 wow animated zoomInDown" id="heading-text">
+                    <div class="col-md-6 col-md-offset-3" id="heading-text">
                         <h3>Privacy Policy</h3>
                         <p>Last Updated: November 13, 2025</p>
                         <hr class="full">
@@ -122,9 +122,9 @@
                         <p><strong>Privacy Policy for Quintechs Information Technology (Dynamics 365 HR/Payroll Solution)</strong></p>
                         <p><strong>Effective Date: November 13, 2025</strong></p>
 
-                        <p>This Privacy Policy describes how **Quintechs Information Technology** ("we," "us," or "our") processes Personal Data within our specialized HR and Payroll application, the "Application," built on **Microsoft Dynamics 365 Finance and Operations.**</p>
+                        <p>This Privacy Policy describes how <strong>Quintechs Information Technology</strong> ("we," "us," or "our") processes Personal Data within our specialized HR and Payroll application, the "Application," built on <strong>Microsoft Dynamics 365 Finance and Operations.</strong></p>
 
-                        <p>This policy applies to data processing activities related to our clients (employers) and their respective employees (data subjects) in the **Middle East and Arab Gulf (GCC) region**. We commit to handling all data in compliance with relevant local data protection legislation.</p>
+                        <p>This policy applies to data processing activities related to our clients (employers) and their respective employees (data subjects) in the <strong>Middle East and Arab Gulf (GCC) region</strong>. We commit to handling all data in compliance with relevant local data protection legislation.</p>
 
                         <h4>1. Our Role in Data Processing</h4>
                         <p>Due to the nature of our Application as a specialized business system, <strong>Quintechs Information Technology</strong> operates primarily as a <strong>Data Processor</strong>.</p>
@@ -149,18 +149,18 @@
 
                         <h4>4. Data Storage, Security, and Dynamics 365</h4>
                         <p><strong>Platform:</strong> Our Application is built on the robust security framework of Microsoft Dynamics 365 Finance and Operations.</p>
-                        <p><strong>Data Location:</strong> Data is stored in Microsoft Azure data centers. The specific location of data residency (which may be a regional GCC cloud center) is determined by our client (the Data Controller) during deployment. **Quintechs Information Technology supports its clients in meeting all applicable local data residency and localization requirements.**</p>
+                        <p><strong>Data Location:</strong> Data is stored in Microsoft Azure data centers. The specific location of data residency (which may be a regional GCC cloud center) is determined by our client (the Data Controller) during deployment. <strong>Quintechs Information Technology supports its clients in meeting all applicable local data residency and localization requirements.</strong></p>
                         <p><strong>Security Measures:</strong> We implement and maintain appropriate technical and organizational security measures, including role-based access controls within D365, data encryption, and robust monitoring to protect against unauthorized access, disclosure, alteration, or destruction. We enforce strict access protocols for our support personnel, granting access only on a need-to-know basis for support and maintenance activities.</p>
                         
                         <h4>5. Data Transfer, Sharing, and Integrations</h4>
-                        <p><strong>Internal Access:</strong> Personal Data is accessed only by **Quintechs Information Technology’s** authorized technical and support staff to perform essential services (including monitoring, bug fixes, support, and enhancements) under strict confidentiality agreements.</p>
+                        <p><strong>Internal Access:</strong> Personal Data is accessed only by <strong>Quintechs Information Technology’s</strong> authorized technical and support staff to perform essential services (including monitoring, bug fixes, support, and enhancements) under strict confidentiality agreements.</p>
                         <p><strong>Third-Party Sharing (Controller Instruction):</strong> We facilitate data sharing with external entities (such as local banks for salary transfers, government authorities for compliance, and insurance providers) *only* as instructed and authorized by the Data Controller through the Application’s integration features (Rest APIs or Business Events).</p>
                         <p><strong>Cross-Border Transfers:</strong> Transfers of Personal Data across borders (outside the Data Controller’s jurisdiction) are managed in compliance with the relevant GCC data protection laws. This may require specific contractual safeguards, regulatory approvals, or reliance on an adequacy mechanism to ensure the data retains a high level of protection.</p>
                         
                         <h4>6. Data Subject Rights and Contact</h4>
-                        <p>As a Data Processor, **Quintechs Information Technology** is committed to supporting our clients in upholding the rights of the Data Subjects (employees). These rights typically include the Right of Access, Rectification (Correction), and Erasure (Deletion), subject to legal retention limits for payroll data.</p>
+                        <p>As a Data Processor, <strong>Quintechs Information Technology</strong> is committed to supporting our clients in upholding the rights of the Data Subjects (employees). These rights typically include the Right of Access, Rectification (Correction), and Erasure (Deletion), subject to legal retention limits for payroll data.</p>
                         <p><strong>To exercise these rights, the Data Subject must direct their request to their employer (the Data Controller).</strong></p>
-                        <p>The Data Controller will then officially instruct **Quintechs Information Technology** to take the necessary action within the Application, provided such action does not violate local labor or tax laws that mandate record keeping.</p>
+                        <p>The Data Controller will then officially instruct <strong>Quintechs Information Technology</strong> to take the necessary action within the Application, provided such action does not violate local labor or tax laws that mandate record keeping.</p>
 
                         <h4>7. Data Retention</h4>
                         <p>Personal Data is retained within the Application for the period required by the Data Controller, in accordance with the mandatory data retention periods stipulated by the local labor and statutory laws of the GCC countries where they operate. We will delete or anonymize the data upon formal instruction from the Data Controller once those legal periods expire.</p>
@@ -177,40 +177,106 @@
                 </div>
             </div>
         </section>
-        <section id= "footer" class= "main-footer">
-			<div class= "row">
-				<div class= "col-xs-12 logo text-center">
-					<h1>Quintechs</h1>
-				</div>
-			</div>
-			<div class= "row">
-				<div class= "col-xs-12 text-center" style="margin-bottom: 10px;">
-					<p><a href="privacy.html" style="color: #f0f0f0; text-decoration: underline;">Privacy Policy</a></p>
-				</div>
-			</div>
-			<div class= "row">
-				<div class= "col-xs-12 copyright text-center">
-					<p> Copyright ©2025. All rights reserved.</p>
-				</div>
-			</div>
-		</section>
-        <script src="js/jquery.min.js"></script>
+			<style>
+/* 1. Default state: Dimmed gray color for both social icons (slightly lighter than text color) */
+.social-icons-footer a {
+    color: #888 !important; /* Dimmed gray color for effect */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* 2. Hover state: Social Icons (LinkedIn Blue & Microsoft Blue) */
+.social-icons-footer a[title="LinkedIn Profile"]:hover {
+    color: #0077B5 !important; 
+}
+.social-icons-footer a[title="Microsoft Partner Profile"]:hover {
+    color: #0078D7 !important; 
+}
+
+/* 3. Hover state: All Footer Links (Links section and Email/Phone links) - Changes link color to White */
+.col-md-3 ul a:hover,
+.col-md-3 p a:hover {
+    color: #fff !important; 
+}
+</style>
+
+<section id= "footer" class= "main-footer">
+    <div class="container">
+        <div class="row" style="padding-top: 30px; padding-bottom: 30px; text-align: left;">
+            
+            <div class="col-md-6 col-sm-12">
+                <h3 style="color: #f0f0f0; margin-top: 0; margin-bottom: 20px; font-size: 20px;">Quintechs Information Technology</h3>
+                
+                <p style="color: #777; margin-bottom: 25px; font-size: 14px;">
+                    We are dedicated Microsoft Partners, delivering innovative solutions in Information Technology, Dynamics 365, Power Platform, and Cloud Services to drive digital success for businesses globally.
+                </p>
+                <div class="social-icons-footer" style="display: flex; align-items: center;">
+                    <a href="https://www.linkedin.com/company/quintechs/" target="_blank" style="font-size: 24px; margin-right: 15px; display: inline-block; line-height: 1;" data-toggle="tooltip" title="LinkedIn Profile">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://marketplace.microsoft.com/en-us/marketplace/partner-dir/2f887acf-d89c-4740-bc62-e2f9807ab0a8/overview" target="_blank" style="font-size: 24px; margin-right: 15px; display: inline-block; line-height: 1;" data-toggle="tooltip" title="Microsoft Partner Profile">
+                        <i class="fa fa-windows"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-12" style="padding-left: 30px;">
+                <h3 style="color: #f0f0f0; margin-top: 0; margin-bottom: 20px; font-size: 20px;">Contact Information</h3>
+                
+                <p style="color: #777; margin-bottom: 15px; font-size: 14px;">
+                    <i class="fa fa-map-marker" style="margin-right: 10px; color: #FF5733;"></i>
+                    Abu Al Haj Complex, Queen Rania Street, Amman, Jordan
+                </p>
+                
+                <p style="color: #777; margin-bottom: 15px; font-size: 14px;">
+                    <i class="fa fa-phone" style="margin-right: 10px; color: #3498db;"></i>
+                    <a href="tel:+962797226030" style="color: #777; text-decoration: none; display: inline;">+962 79722 6030</a>
+                </p>
+
+                <p style="color: #777; font-size: 14px;">
+                    <i class="fa fa-envelope-o" style="margin-right: 10px; color: #1abc9c;"></i>
+                    <a href="mailto:info@quintechs.com" style="color: #777; text-decoration: none; display: inline; font-size: 14px;">info@quintechs.com</a>
+                </p>
+            </div>
+
+            <div class="col-md-3 col-sm-12" style="padding-left: 30px;">
+                <h3 style="color: #f0f0f0; margin-top: 0; margin-bottom: 20px; font-size: 20px;">Links</h3>
+                <ul style="padding: 0; list-style-type: none;">
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#about" style="color: #777; text-decoration: none; display: block; font-size: 14px;">About Us</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#our_service" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Our Services</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#our_products" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Our Products</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#team" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Technologies</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#contact" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Contact Us</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="privacy.html" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class= "row" style="border-top: 1px solid #333; padding-top: 15px; padding-bottom: 5px; margin-left: 0; margin-right: 0;">
+        <div class= "col-xs-12 copyright text-center">
+            <p style="color: #777; margin-bottom: 5px; font-size: 14px;">
+                Copyright &copy;2025. All rights reserved.
+            </p>
+            <p style="color: #777; font-size: 14px;">
+                جميع الحقوق محفوظة &copy;2025 لدى شركة الحلول الكبرى لتكنولوجيا المعلومات ذات مسؤولية محدودة
+            </p>
+        </div>
+    </div>
+</section>        <script src="js/jquery.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>
 	    <script src="js/owl.carousel.min.js"></script>
 	    <script src="js/isotope.pkgd.min.js"></script>
 		<script src="js/script.js"></script>
-		<script src="js/wow.min.js"></script>
+		
 		<script src="js/jquery.actual.min.js"></script>
-        <script>
-            new WOW().init();
-        </script>
+        
         <script src="js/jquery-ui-1.10.3.min.js"></script>
         <script src="js/jquery.knob.js"></script>
         <script src="js/daterangepicker.js"></script>
         <script src="js/bootstrap3-wysihtml5.all.min.js"></script>
         <script src="js/dashboard.js"></script>
-       <!-- Demo Popup Modal -->
-<style>
+       <style>
 #msFormModal {
   display:none;
   position:fixed;
@@ -293,7 +359,6 @@ window.onclick=function(e){
   }
 </style>
 
-<!-- Popup Modal Styles -->
 <style>
   #demoModal {
     display: none;
@@ -330,6 +395,5 @@ window.onclick=function(e){
 
 <a href="#" class="demo-btn" onclick="openMicrosoftForm()">Request a Demo</a>
 
-	</body><!-- Add the floating Request a Demo button anywhere on the page -->
-	</body>
+	</body></body>
 </html>
