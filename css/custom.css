@@ -319,10 +319,6 @@ hr
 {
     color: #C09553;
 }
-.service:hover .service-icon i
-{
-    font-size: 7em;
-}
 .service:hover .about-service h3
 {
     color: rgb(175, 104, 77)
@@ -359,6 +355,7 @@ hr
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
+    min-height: 80px; /* <-- INSERT THIS LINE */
 }
 .team-member-description
 {
@@ -1130,4 +1127,55 @@ form
   #wrapper {
     background-attachment: scroll !important;
   }
+}
+/* =================================================================================================
+   FIX: Equalize Column Heights for Technologies Section on Small Screens (Tablets/Landscape Phones)
+   This uses Flexbox to force all col-sm-6 columns in the row to share the same height.
+================================================================================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Targets the row container in the "Technologies" section */
+    #team .main_content {
+        display: flex;
+        flex-wrap: wrap; /* Allows the columns to wrap to the next line */
+        /* Optional: Set a consistent min-height for the entire row if needed, though flexbox usually handles it */
+    }
+    
+    /* Targets the columns within that row */
+    #team .main_content > div.col-sm-6 {
+        display: flex; /* Ensures the column itself is a flex container */
+        flex-direction: column; /* Stacks content vertically within the column */
+        height: auto; /* Allow height to adjust */
+    }
+
+    /* Optional: Ensure text descriptions have a floor to prevent height variance inside the column */
+    #team .team-member-description {
+        min-height: 85px; /* Adjust this value if the longest text doesn't fit */
+    }
+}
+/* =================================================================================================
+   CRITICAL FIX: Equalize Column Heights on Small Screens (Tablets/Landscape Phones)
+   This uses Flexbox to force all col-sm-6 columns in the row to share the same height,
+   which should eliminate the vertical gap completely.
+================================================================================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* 1. Force the row to behave as a Flex container */
+    #team .main_content {
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: stretch; /* Ensures columns stretch to the height of the tallest one */
+    }
+    
+    /* 2. Target the specific columns (col-sm-6) that are wrapping */
+    #team .main_content > div.col-sm-6 {
+        height: auto; 
+        /* Ensure each column's content is also treated as a flex item to fill the space */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 3. Ensure the description text has a consistent height as a fallback */
+    #team .team-member-description {
+        min-height: 85px; /* Adjust this value if the longest text doesn't fit */
+        flex-grow: 1; /* Allows the description box to fill any remaining space in the column */
+    }
 }
