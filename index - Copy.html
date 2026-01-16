@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quintechs</title>
+        <link rel="icon" href="img/QUINTECHS LOGO.png" type="image/png">
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/ionicons.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/owl.transitions.css">
+	    <link rel="stylesheet" href="css/animate.css">
+	    <link rel="stylesheet" href="css/custom.css">
+
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/owl.carousel.min.js"></script>
+	    <script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.actual.min.js"></script>
+
+        <style>
+            /* Basic reset to ensure full width */
+            html, body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                overflow-x: hidden; /* Prevent horizontal scrollbar from appearing due to minor layout issues */
+            }
+
+            .fa-lightbulb-o {
+                color: orange !important; /* Changed lightbulb icon color to orange */
+            }
+            .fa-desktop {
+                color: green !important; /* Changed desktop icon color to green */
+            }
+			.fa-cloud {
+                color: blueviolet !important; /* Changed desktop icon color to blueviolet */
+
+			}
+            .fa-life-ring {
+                color: red !important; /* Changed life-ring icon color to red */
+            }
+			/* Updated style for the logo container */
+            .navbar-brand {
+                display: flex; /* Use flexbox to align items */
+                align-items: center; /* Vertically center the items */
+                text-decoration: none; /* Remove underline from the link if it appears */
+            }
+            .navbar-brand img {
+                height: 50px;
+                margin-top: -5px; /* Keep this if it's needed for overall vertical positioning within the navbar */
+                margin-right: 10px; /* Add some space between the logo and the text */
+            }
+
+            /* --- Styles for "Projects" section --- */
+            #project-logos-section {
+                padding: 60px 0; /* Add some padding above and below the section */
+                background-color: #f9f9f9; /* Optional: light background color */
+            }
+
+            .project-logos-container {
+                width: 100%;
+                overflow: hidden; /* Hide overflow outside the container */
+                white-space: nowrap; /* Prevent images from wrapping to the next line */
+                box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            }
+
+            .project-logos-strip {
+                display: inline-block; /* Allow the strip to be wider than its parent */
+                animation: scrollLogos 80s linear infinite; /* Apply the scrolling animation */
+            }
+
+            .project-logos-strip:hover {
+                animation-play-state: paused; /* Pause the animation on hover */
+            }
+
+            .project-logo {
+                height: 80px; /* Adjust as needed */
+                margin: 0 30px; /* Space between logos */
+                vertical-align: middle; /* Align logos vertically in the middle */
+                display: inline-block; /* Ensure images are treated as inline blocks for horizontal alignment */
+                filter: grayscale(100%); /* Gray out the images */
+                transition: filter 0.5s ease-in-out; /* Smooth transition for hover effect */
+            }
+
+            .project-logo:hover {
+                filter: grayscale(0%); /* Show color on hover */
+            }
+
+            @keyframes scrollLogos {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    /* Translate by half the strip's width to create a continuous loop.
+                       This works because the strip contains two sets of the 14 projects. */
+                    transform: translateX(-50%); 
+                }
+            }
+            /* --- End of Styles for "Projects" section --- */
+
+            /* --- Styles for Footer --- */
+            #footer {
+                background-color: #000; /* Dark background color */
+                color: #f0f0f0; /* Light text color */
+                padding: 20px 0; /* Add some padding */
+                width: 100%; /* Ensure it spans the full width of its parent */
+                box-sizing: border-box; /* Include padding in the element's total width */
+                margin: 0; /* Remove any potential default margins */
+            }
+            #footer .logo h1 {
+                color: #f0f0f0; /* Ensure the "Quintechs" text is visible */
+            }
+            #footer .copyright p {
+                color: #ccc; /* Slightly lighter color for copyright text */
+            }
+            /* Custom rule to remove padding from columns within the footer */
+            #footer .row [class*="col-"] {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            /* --- End of Styles for Footer --- */
+        </style>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="overlay-1">
+				<section id= "navigation">
+					<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	  					<div class="container-fluid">
+	    					<div class="navbar-header">
+    							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        							<span class="ion-navicon"></span>
+    							</button>
+    							<a class="navbar-brand" href="#">
+        							<img src="img/QUINTECHS LOGO.png" alt="QUINTECHS Logo">
+        							Quintechs
+    							</a>
+							</div>
+	    					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      					<ul class="nav navbar-nav navbar-right">
+		      						<li><a href="#about">About Us</a></li>
+		      						<li><a href="#our_service">Our Services</a></li>
+								<li><a href="#our_products">Our Products</a></li>
+		        					<li><a href="#team">Technologies</a></li>
+		        					<li style="display: none;"><a href="#portfolio">Portfolio</a></li>
+		        					<li style="display: none;"><a href="#price_table">Price Table</a></li>
+		        					<li style="display: none;"><a href="#blog">Blog</a></li>
+		        					<li style="display: none;"><a href="#testimonial">Testimonials</a></li>
+		        					<li><a href="#contact">Contact us</a></li>
+							    </ul>
+	    					</div>	</div>	</nav>	</section>	<section id="starting">
+					<div class="text-center starting-text">
+						<h1 class="rene">QUINTECHS</h1>
+						<h2>Driving Your Digital Success</h2>
+					</div>
+				</section>
+				<div id="bottom" class="bottom text-center">
+			        <a href="#about"><i class="ion-ios7-arrow-down"></i></a>
+			    </div>
+			</div></div>	<section id="about">
+			<div class="container">
+				<div class="row text-center" id="heading">
+					<div class="col-md-6 col-md-offset-3" id="heading-text">
+						<h3>About Us</h3>
+	                	<p>Microsoft Partner</p>
+	                	<hr class="full">
+	                	<br/>
+					</div>
+				</div>	<div class="row about-us-text">
+					<div class="col-md-8 col-md-offset-2">
+						<p class="text-center">
+							Quintechs Information Technology is dedicated to Microsoft's mission, delivering innovative solutions to revolutionize modern business. Founded in 2021 in Illinois, USA, we empower organizations through digital transformation by leveraging our expertise in the latest technologies. Our focus is on understanding customer needs to provide effective digital solutions with measurable results.
+
+
+						</p>
+					</div>
+				</div>	<div class="row main_content">
+					<div class="col-md-4" data-wow-delay="0.1s">
+						<figure>
+							<img class="pro img-responsive center-block" src="img/icons8-microsoft-96.svg">
+						</figure>
+						<h5 class="text-center">Microsoft Partner</h5>
+						<div class="row">
+							<div class="col-xs-12 text-center" style="border-right: 1px solid #f4f4f4; display: none;">
+                                <div style="display: inline; width: 60px; height: 60px;">
+                                    <input type="text" class="knob" data-readonly="true" value="90" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial; text-align: center; /* color: rgb(57, 204, 204); */ padding: 0px; -webkit-appearance: none; background: none;">
+                                </div>
+                            </div>	</div>	</div>	<div class="col-md-4" data-wow-delay="0.1s">
+						<figure>
+							<img class="pro img-responsive center-block" src="img/Finance+Operations_scalable.svg">
+						</figure>
+						<h5 class="text-center">Microsoft Dynamics 365</h5>
+						<div class="row">
+							<div class="col-xs-12 text-center" style="border-right: 1px solid #f4f4f4; display: none;">
+	                            <div style="display: inline; width: 60px; height: 60px;">  	
+	                            	<input type="text" class="knob" data-readonly="true" value="80" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial; text-align: center; /* color: rgb(57, 204, 204); */ padding: 0px; -webkit-appearance: none; background: none;">
+	                            </div>
+	                        </div>	</div>	</div>	<div class="col-md-4" data-wow-delay="0.1s">
+						<figure>
+							<img class="pro img-responsive center-block" src="img/PowerPlatform_scalable.svg">
+						</figure>
+						<h5 class="text-center">Microsoft Power Platform</h5>
+						<div class="row">
+							<div class="col-xs-12 text-center" style="border-right: 1px solid #f4f4f4; display: none;">
+	                            <div style="display: inline; width: 60px; height: 60px;">
+	                                <input type="text" class="knob" data-readonly="true" value="75" data-width="60" data-height="60" data-fgcolor="#39CCCC" readonly="readonly" style="width: 34px; height: 20px; position: absolute; vertical-align: middle; margin-top: 20px; margin-left: -47px; border: 0px; font-weight: bold; font-style: normal; font-variant: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: Arial; text-align: center; /* color: rgb(57, 204, 204); */ padding: 0px; -webkit-appearance: none; background: none;">
+	                        	</div>	
+	                    	</div>	</div>	</div>	</div>
+                <div class="row text-center" style="margin-top: 30px; margin-bottom: 30px;">
+                    <div class="col-md-12">
+                        <a class="btn btn-primary btn-lg" href="https://marketplace.microsoft.com/en-us/marketplace/partner-dir/2f887acf-d89c-4740-bc62-e2f9807ab0a8/overview" target="_blank">
+                            <i class="fa fa-handshake-o"></i> View Our Microsoft Partner Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="row text-center" id="project-logos-section">
+                    <div class="col-md-12">
+                        <h3>Projects</h3> 
+                        <hr class="full">
+                        <br/>
+                        <div class="project-logos-container">
+                            <div class="project-logos-strip">
+                                <div class="project-logos-strip">
+    								<div class="project-logos-strip">
+										<a href="/projects" target="_blank"><img src="img/Projects/Project1.png" alt="Project 1" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project2.png" alt="Project 2" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project3.png" alt="Project 3" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project4.png" alt="Project 4" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project5.png" alt="Project 5" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project6.png" alt="Project 6" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project7.png" alt="Project 7" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project8.png" alt="Project 8" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project9.png" alt="Project 9" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project10.png" alt="Project 10" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project11.png" alt="Project 11" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project12.png" alt="Project 12" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project13.png" alt="Project 13" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project14.png" alt="Project 14" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project1.png" alt="Project 1" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project2.png" alt="Project 2" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project3.png" alt="Project 3" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project4.png" alt="Project 4" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project5.png" alt="Project 5" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project6.png" alt="Project 6" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project7.png" alt="Project 7" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project8.png" alt="Project 8" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project9.png" alt="Project 9" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project10.png" alt="Project 10" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project11.png" alt="Project 11" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project12.png" alt="Project 12" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project13.png" alt="Project 13" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project14.png" alt="Project 14" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project1.png" alt="Project 1" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project2.png" alt="Project 2" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project3.png" alt="Project 3" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project4.png" alt="Project 4" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project5.png" alt="Project 5" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project6.png" alt="Project 6" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project7.png" alt="Project 7" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project8.png" alt="Project 8" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project9.png" alt="Project 9" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project10.png" alt="Project 10" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project11.png" alt="Project 11" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project12.png" alt="Project 12" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project13.png" alt="Project 13" class="project-logo"></a>
+										<a href="/projects" target="_blank"><img src="img/Projects/Project14.png" alt="Project 14" class="project-logo"></a>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row about-us-text"> </div>
+			</div>	</section>	<section id="our_service">
+			<div class="container">
+				<div class="row text-center" id= "heading">
+	        		<div class="col-md-6 col-md-offset-3" id= "heading-text">
+	        			<h3>Our Services</h3>
+	                	<p>Optimize your business, increase profits, and reduce operating costs.</p>
+	                	<hr class="full">
+	                	<br/>
+	        		</div>
+		        </div>
+			    <div class="main_content">
+				    <div class="services">
+			        	<div class="row">
+			        		<div class="col-sm-6 service"> <div class="service-icon text-center">
+			        				<i class="fa fa-lightbulb-o fa-5x"></i>
+			        			</div>
+			        			<div class="about-service">
+			        				<h3 class="text-center">Consultation Services</h3>
+			        				<p class="text-center">
+			        					Leverage our expert advice to refine your strategies, optimize operations, and achieve your business objectives.
+			        				</p>
+			        			</div>
+			        		</div>	<div class="col-sm-6 service"> <div class="service-icon text-center">
+			        				<i class="fa fa-desktop fa-5x"></i>
+			        			</div>
+			        			<div class="about-service">
+			        				<h3 class="text-center">ERP Implementation Services</h3>
+			        				<p class="text-center">
+											Streamline your business processes with our comprehensive ERP implementation, ensuring seamless integration and improved efficiency
+									</p>
+			        			</div>
+			        		</div>	</div>	<div class="row">
+			        		<div class="col-sm-6 service"> <div class="service-icon text-center">
+			        				<i class="fa fa-cloud fa-5x"></i>
+			        			</div>
+			        			<div class="about-service">
+			        				<h3 class="text-center">Cloud Services</h3>
+			        				<p class="text-center">
+			        					Harness the power of cloud with our Azure and PowerPlatform integration, building robust and scalable solutions for your enterprise.
+			        				</p>
+			        			</div>
+			        		</div>	<div class="col-sm-6 service"> <div class="service-icon text-center">
+			        				<i class="fa fa-life-ring fa-5x"></i>
+			        			</div>
+			        			<div class="about-service">
+			        				<h3 class="text-center">Support Services</h3>
+			        				<p class="text-center">
+										Ensure long-term success with our dedicated support and post-implementation services, providing ongoing assistance and optimization.			        				</p>
+			        			</div>
+			        		</div>
+                            <div class="col-sm-4 service" style="display: none;">
+			        			<div class="service-icon text-center">
+			        				<i class="fa fa-lightbulb-o fa-5x"></i>
+			        			</div>
+			        			<div class="about-service">
+			        				<h3 class="text-center">Creative Ideas</h3>
+			        				<p class="text-center">
+			        					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			                       		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			                       		quis nostrud 
+			        				</p>
+			        			</div>
+			        		</div>
+                            <div class="col-sm-4 service" style="display: none;">
+			        			<div class="service-icon text-center">
+			        				<i class="fa fa-stack-overflow fa-5x"></i>
+			        			</div>
+			        			<div class="about-service">
+			        				<h3 class="text-center">Support</h3>
+			        				<p class="text-center">
+			        					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			                       		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			                       		quis nostrud 
+			        				</p>
+			        			</div>
+			        		</div>	</div>	</div>	</div>	</div>	</section>	
+                    
+<section id="our_products">
+  <div class="container">
+    <div class="row text-center" id="heading">
+      <div class="col-md-6 col-md-offset-3" id="heading-text">
+        <h3>Our Products</h3>
+        <p>Innovative solutions built on Microsoft Dynamics 365.</p>
+        <hr class="full">
+        <br/>
+      </div>
+    </div>
+
+    <div class="row main_content">
+      <div class="col-md-6" data-wow-delay="0.1s">
+        <div class="service-icon text-center">
+          <i class="fa fa-users fa-5x" style="color:#0078D7;"></i>
+        </div>
+        <h4 class="text-center">MEA HR and Payroll</h4>
+        <p class="text-center">
+          MEA HR and Payroll is a comprehensive solution for Microsoft Dynamics 365 that simplifies HR and payroll management across the Middle East and GCC region. It automates salary processing, attendance tracking, and compliance with regional labor and tax laws, giving organizations efficiency, accuracy, and control over workforce operations.
+        </p>
+	    <p class="text-center"><a class="btn btn-primary" href="/meahrpayroll" target="_blank">Learn more</a></p>
+	 </div>
+
+     <div class="col-md-6" data-wow-delay="0.3s">
+        <div class="service-icon text-center">
+            <i class="fa fa-qrcode fa-5x" style="color:#0078D7;"></i>
+        </div>
+        <h4 class="text-center">Jordan Tax Connector</h4>
+        <p class="text-center">
+            We provide a custom solution based on Microsoft Dynamics 365 Finance & Operations to seamlessly sync e-invoices with the Jordan Income and Sales Tax Department (ISTD). This solution ensures full compliance with local regulations, including the automatic generation and integration of required QR codes for all invoices.
+        </p>
+        <p class="text-center">
+            
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="team">
+    <div class="container">
+        <div class="team-members">
+            <div class="row text-center" id="heading">
+                <div class="col-md-6 col-md-offset-3" id="heading-text">
+                    <h3>Technologies</h3>
+                    <p>Empowered by a wide range of Microsoft Business Applications</p>
+                    <hr class="full">
+                    <br/>
+                </div>
+            </div>
+            <!-- Row 1 -->
+<div class="row main_content">
+    <div class="col-md-4 col-sm-6 text-center">
+        <div class="row" data-wow-delay="0.0s">
+            <div class="col-md-8 col-md-offset-2">
+                <img class="img-responsive center-block" src="img/Icons/CopilotStudio_scalable.svg" alt="Copilot Studio">
+            </div>
+        </div>
+        <h4 data-wow-delay="0.1s">Copilot Studio</h4>
+        <p class="team-member-description" data-wow-delay="0.2s">
+            Harness the power of AI to accelerate development, automate workflows, and enhance productivity with Copilot Studio.
+        </p>
+    </div>
+
+    <div class="col-md-4 col-sm-6 text-center">
+        <div class="row" data-wow-delay="0.3s">
+            <div class="col-md-8 col-md-offset-2">
+                <img class="img-responsive center-block" src="img/Finance_scalable.svg" alt="Dynamics 365 Finance">
+            </div>
+        </div>
+        <h4 data-wow-delay="0.4s">Dynamics 365 Finance</h4>
+        <p class="team-member-description" data-wow-delay="0.5s">
+            Gain real-time financial insights and automate processes with Dynamics 365 Finance for improved decision-making.
+        </p>
+    </div>
+
+    <div class="col-md-4 col-sm-6 text-center">
+        <div class="row" data-wow-delay="0.6s">
+            <div class="col-md-8 col-md-offset-2">
+                <img class="img-responsive center-block" src="img/SupplyChainManagement_scalable.svg" alt="Dynamics 365 Supply Chain">
+            </div>
+        </div>
+        <h4 data-wow-delay="0.7s">Dynamics 365 Supply Chain</h4>
+        <p class="team-member-description" data-wow-delay="0.8s">
+            Optimize your supply chain operations from end to end with Dynamics 365 Supply Chain Management.
+        </p>
+    </div>
+</div>
+
+<!-- Row 2 -->
+<div class="row main_content">
+    <div class="col-md-4 col-sm-6 text-center">
+        <div class="row" data-wow-delay="0.9s">
+            <div class="col-md-8 col-md-offset-2">
+                <img class="img-responsive center-block" src="img/Commerce_scalable.svg" alt="Dynamics 365 Retail">
+            </div>
+        </div>
+        <h4 data-wow-delay="1.0s">Dynamics 365 Retail</h4>
+        <p class="team-member-description" data-wow-delay="1.1s">
+            Deliver personalized shopping experiences across all channels with Dynamics 365 Retail.
+        </p>
+    </div>
+
+    <div class="col-md-4 col-sm-6 text-center">
+        <div class="row" data-wow-delay="1.2s">
+            <div class="col-md-8 col-md-offset-2">
+                <img class="img-responsive center-block" src="img/Icons/HumanResources_scalable.svg" alt="Dynamics 365 HR">
+            </div>
+        </div>
+        <h4 data-wow-delay="1.3s">Dynamics 365 HR</h4>
+        <p class="team-member-description" data-wow-delay="1.4s">
+            Simplify HR management, payroll, and employee engagement with Dynamics 365 HR.
+        </p>
+    </div>
+
+    <div class="col-md-4 col-sm-6 text-center">
+        <div class="row" data-wow-delay="1.5s">
+            <div class="col-md-8 col-md-offset-2">
+                <img class="img-responsive center-block" src="img/BusinessCentral_scalable.svg" alt="Dynamics 365 Business Central">
+            </div>
+        </div>
+        <h4 data-wow-delay="1.6s">Dynamics 365 Business Central</h4>
+        <p class="team-member-description" data-wow-delay="1.7s">
+            Manage your financials, sales, service, and operations with Dynamics 365 Business Central.
+        </p>
+    </div>
+</div>
+
+<!-- Row 3 -->
+<div class="row main_content">
+    <div class="col-md-4 col-sm-6 text-center">
+        <div class="row" data-wow-delay="1.8s">
+            <div class="col-md-8 col-md-offset-2">
+                <img class="img-responsive center-block" src="img/PowerBI_scalable.svg" alt="Power BI">
+            </div>
+        </div>
+        <h4 data-wow-delay="1.9s">Power BI</h4>
+        <p class="team-member-description" data-wow-delay="2.0s">
+            Transform data into rich, interactive visualizations with Power BI for powerful business intelligence.
+        </p>
+    </div>
+
+    <div class="col-md-4 col-sm-6 text-center">
+        <div class="row" data-wow-delay="2.1s">
+            <div class="col-md-8 col-md-offset-2">
+                <img class="img-responsive center-block" src="img/PowerApps_scalable.svg" alt="Power Apps">
+            </div>
+        </div>
+        <h4 data-wow-delay="2.2s">Power Apps</h4>
+        <p class="team-member-description" data-wow-delay="2.3s">
+            Build custom business apps with Power Apps to streamline operations and enhance productivity.
+        </p>
+    </div>
+
+    <div class="col-md-4 col-sm-6 text-center">
+        <div class="row" data-wow-delay="2.4s">
+            <div class="col-md-8 col-md-offset-2">
+                <img class="img-responsive center-block" src="img/PowerAutomate_scalable.svg" alt="Power Automate">
+            </div>
+        </div>
+        <h4 data-wow-delay="2.5s">Power Automate</h4>
+        <p class="team-member-description" data-wow-delay="2.6s">
+            Automate repetitive tasks and workflows across applications and services with Power Automate.
+        </p>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                <section id="portfolio" style="display: none;">
+	    	        <div class="container">
+	    		        <div class="row text-center" id="heading">
+	    			        <div class="col-md-6 col-md-offset-3" id="heading-text">
+	        			        <h3>Our Works</h3>
+	                	        <p>Take a look, Taste our cook</p>
+	                	        <hr class="full">
+	                	        <br/>
+	        		        </div>
+	    		        </div>
+	    		        <div class="main_content">
+		    		        <div class="row port">
+		    			        <div class="col-md-8 col-md-offset-2 text-center button-group" id="filters">
+		    				        <button type="button" class="btn btn-default is-checked" data-filter="*">All</button>
+		    				        <button type="button" class="btn btn-default" data-filter=".web">Web Design</button>
+		    				        <button type="button" class="btn btn-default" data-filter=".game">Game</button>
+		    				        <button type="button" class="btn btn-default" data-filter=".app">App</button>
+		    			        </div>
+		    		        </div>	<div class="row">
+		    			        <div class="isotope" id="port-items">
+		    				        <div class="col-md-4 col-sm-6 col-xs-6 element-item web" data-category="web">
+		    					        <img class="img-responsive" src="img/web-design-1.jpg" >
+		    				        </div>
+		    				        <div class="col-md-4 col-sm-6 col-xs-6 element-item game" data-category="game">
+		    					        <img class="img-responsive" src="img/game-2.jpg">
+		    				        </div>
+		    				        <div class="col-md-4 col-sm-6 col-xs-6 element-item app" data-category="app">
+		    					        <img class="img-responsive" src="img/app-1.jpg">
+		    				        </div>
+		    				        <div class="col-md-4 col-sm-6 col-xs-6 element-item web" data-category="web">
+		    					        <img class="img-responsive" src="img/web-design-2.jpg">
+		    				        </div>
+		    				        <div class="col-md-4 col-sm-6 col-xs-6 element-item game" data-category="game">
+		    					        <img class="img-responsive" src="img/game-1.jpg">
+		    				        </div>
+		    				        <div class="col-md-4 col-sm-6 col-xs-6 element-item app" data-category="app">
+		    					        <img class="img-responsive" src="img/app-2.jpg">
+		    				        </div>
+		    				        <div class="col-md-4 col-sm-6 col-xs-6 element-item web" data-category="web">
+		    					        <img class="img-responsive" src="img/web-design-3.jpg" >
+		    				        </div>
+		    				        <div class="col-md-4 col-sm-6 col-xs-6 element-item game" data-category="game">
+		    					        <img class="img-responsive" src="img/game-3.jpg">
+		    				        </div>
+		    				        <div class="col-md-4 col-sm-6 col-xs-6 element-item app" data-category="app">
+		    					        <img class="img-responsive" src="img/app-3.jpg">
+		    				        </div>
+		    			        </div>	</div>	</div>	</div>	</section>
+                <section id="price_table" style="display: none;">
+	    	        <div class="container">
+	    		        <div class="row text-center" id="heading">
+	    			        <div class="col-md-6 col-md-offset-3" id="heading-text">
+	        			        <h3>Price Table</h3>
+	                	        <p>So flexible, More comfortable</p>
+	                	        <hr class= "full">
+	                	        <br/>
+	        		        </div>
+	    		        </div>	<div class="row main_content">
+	    			        <ul class="price-table-chart">
+                                <li>
+		                            <a href="#">
+		                                <strong>Free</strong>
+		                                <span class="price_table-description">1 Website</span> 
+		                                <span class="price_table-description">1 Year Updates</span> 
+		                                <span class="price_table-description">No Email Support</span>
+		                                <big class="price_table-price">$0</big>
+		                                <span class="price_table-button">Buy Now</span>
+		                            </a>
+		                        </li>
+		            
+		                        <li>
+		                            <a href="#">
+		                                <strong>Business</strong>
+		                                <span class="price_table-description">Unlimited Websites</span> 
+		                                <span class="price_table-description">1 Year Updates</span> 
+		                                <span class="price_table-description">1 Year Email Support</span>
+		                                <big class="price_table-price">$90</big>
+		                                <span class="price_table-button">Buy Now</span>
+		                            </a>
+		                        </li>
+		            
+		                        <li>
+		                            <a href="#">
+		                                <strong>Premium</strong>
+		                                <span class="price_table-description">Unlimited Websites</span> 
+		                                <span class="price_table-description">Lifetime Updates</span> 
+		                                <span class="price_table-description">Lifetime Email Support</span>
+		                                <big class="price_table-price">$190</big>
+		                                <span class="price_table-button">Buy Now</span>
+		                            </a>
+		                        </li>
+		                    </ul>
+	    		        </div>	</div>	</section>
+                <section id="blog" style="display: none;">
+	    	        <div class="container">
+	    		        <div class="row text-center" id="heading">
+	    			        <div class= "bg-image">
+		    			        <div class= "col-md-6 col-md-offset-3" id= "heading-text">
+		        			        <h3>Our Blog</h3>
+		                	        <p>Sharing knowledge, Accepting challenge.</p>
+		                	        <hr class= "full">
+		                	        <br/>
+		        		        </div>
+		        	        </div>
+	    		        </div>
+		    	        <div class= "row post">
+		    		        <div class= "main_content">
+		    			        <div class= "post-thumbnail col-md-5">
+		    				        <div class= "frame">
+		    					        <div class="post-format">
+		    						        <span class="icon-picture">
+		    							        <i class= "fa fa-laptop"></i>
+		    						        </span>
+		    					        </div>
+		    					        <a href="#"><img class= "img-responsive" src="img/design1.png" alt=""/></a>
+		    				        </div>
+		    				        <img class="hidden-xs post-shadow" src="img/post-shadow.png" alt=""/>
+		    			        </div>
+		    			        <div class="post-excerpt col-md-7">
+		    				        <h2 class="title"><a href="#">FLAT & MODERN TREND DESIGN</a></h2>
+		    				        <div class="line-dotted"></div>
+		    				        <p>
+		    					        Diur apelligh to luriem rorde ist thuir quire contears foresa irmde narelair muiers lirguen luirem joires porfelas wateir ogespear pesae. Irmde gues narelair muiers lirguen luirem joires porf wateir ogeepear pesae. Diur tol apelligh to luriem rorde ist thuir quire contears foresa irmde narelair muiers lirguen luirem joires porfelas quie wateir ogespear pesae. Irmde gues narelair muiers lirguen luirem joires porf wateir ogeepear pesae.
+		    					        <a href="#">...Read more</a>
+		    				        </p> 
+		    				        <div class="line-dotted"></div>
+		    				        <p class="meta">
+		    					        <strong>Date:</strong> 14/February/2013 <strong>By:</strong> Zyanya Peredo <strong>In: </strong><a href="#">Photography</a>, <a href="#">Print</a>, <a href="#">Design</a>
+		    				        </p>
+		    				        <div class= "line-dotted"></div>
+		    				        <div class= "post-share">
+		    					        <p>Share this post:</p>
+		    					        <ul>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Contact with Facebook" class= "team-facebook">
+					        				        <i class="fa fa-facebook"></i>
+					        			        </a>
+		    						        </li>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Contact with Twitter" class="team-twitter">
+					        				        <i class="fa fa-twitter"></i>
+					        			        </a>
+		    						        </li>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Contact with Google-plus" class="google-plus">
+					        				        <i class="fa fa-google-plus"></i>
+					        			        </a>
+		    						        </li>
+		    					        </ul>	
+		    				        </div>
+		    			        </div>
+		    		        </div>
+		    	        </div>
+		    	        <div class="row post">
+		    		        <div class="main_content">
+		    			        <div class="post-thumbnail col-md-5">
+		    				        <div class="frame">
+		    					        <div class="post-format image">
+		    						        <span class="icon-facetime-video">
+		    							        <i class="fa fa-video-camera"></i>
+		    						        </span>
+		    					        </div>
+		    					        <div class="vimeo-video" rel="" data-width="500" data-height="400">
+		    						        <iframe width="420" height="315" src="//www.youtube.com/embed/DN__D5ixme0" frameborder="0" allowfullscreen></iframe>
+		    					        </div>
+		    				        </div>
+		    				        <img class="hidden-xs post-shadow" src="img/post-shadow.png" alt=""/>
+		    			        </div>
+		    			        <div class="post-excerpt col-md-7">
+		    				        <h2 class="title">
+		    					        <a href="#">Make up forever - tres vichy</a>
+		    				        </h2>
+		    				        <div class="line-dotted">
+		    				        </div>
+		    				        <p>
+		    					        Diur apelligh to luriem rorde ist thuir quire contears foresa irmde narelair muiers lirguen luirem joires porfelas wateir ogespear pesae. Irmde gues narelair muiers lirguen luirem joires porf wateir ogeepear pesae. Diur tol apelligh to luriem rorde ist thuir quire contears foresa irmde narelair muiers lirguen luirem joires porfelas quie wateir ogespear pesae. Irmde gues narelair muiers lirguen luirem joires porf wateir ogeepear pesae.
+		    					        <a href="#">...Read more</a>
+		    				        </p> 
+		    				        <div class="line-dotted"></div>
+		    				        <p class="meta"><strong>Date: </strong>14/February/2013 <strong>By: </strong>Zyanya Peredo <strong>In: </strong><a href="#">Photography</a>, <a href="#">Print</a>, <a href="#">Design</a>
+		    				        </p>
+		    				        <div class="line-dotted"></div>
+		    				        <div class= "post-share">
+		    					        <p>Share this post:</p>
+		    					        <ul>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Contact with Facebook" class= "team-facebook">
+					        				        <i class="fa fa-facebook"></i>
+					        			        </a>
+		    						        </li>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Contact with Twitter" class="team-twitter">
+					        				        <i class="fa fa-twitter"></i>
+					        			        </a>
+		    						        </li>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Contact with Google-plus" class="google-plus">
+					        				        <i class="fa fa-google-plus"></i>
+					        			        </a>
+		    						        </li>
+		    					        </ul>	
+		    				        </div>
+		    			        </div>
+		    		        </div>
+		    	        </div>
+		    	        <div class="row post">
+		    		        <div class="main_content">
+		    			        <div class="post-thumbnail col-md-5">
+		    				        <div class="frame">
+		    					        <div class="post-format quote">
+		    							        <span class="icon-camera-retro">
+		    							        <i class= "fa fa-star"></i>
+		    						        </span>
+		    					        </div>
+		    					        <a href="#"><img class= "img-responsive" src="img/blog3.png" alt=""/></a>
+		    				        </div>
+		    				        <img class="hidden-xs post-shadow" src="img/post-shadow.png" alt=""/>
+		    			        </div>
+		    			        <div class="post-excerpt col-md-7">
+		    				        <h2 class="title">
+		    					        <a href="#">Make up forever - Make your web page beautiful.</a>
+		    				        </h2>
+		    				        <div class="line-dotted"></div>
+		    				        <p>
+		    					        Diur apelligh to luriem rorde ist thuir quire contears foresa irmde narelair muiers lirguen luirem joires porfelas wateir ogespear pesae. Irmde gues narelair muiers lirguen luirem joires porf wateir ogeepear pesae.
+		    					        <a href="#">...Read more</a>
+		    				        </p> 
+		    				        <div class="line-dotted"></div>
+		    				        <p class="meta"><strong>Date: </strong>14/February/2013 <strong>By: </strong>Zyanya Peredo<strong>In: </strong><a href="#">Photography</a>, <a href="#">Print</a>, <a href="#">Design</a>
+		    				        </p>
+		    				        <div class= "line-dotted"></div>
+		    				        <div class= "post-share">
+		    					        <p>Share this post:</p>
+		    					        <ul>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Share in Facebook" class="facebook"><i class="fa fa-facebook"></i></a>
+		    						        </li>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Share in Twitter" class="twitter"><i class="fa fa-twitter"></i></a>
+		    						        </li>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Share in Google +" class="google-plus">
+					        				        <i class="fa fa-google-plus"></i>
+					        			        </a>
+		    						        </li>
+		    					        </ul>	
+		    				        </div>
+		    			        </div>
+		    		        </div>
+		    	        </div>
+		    	        <div class="row post">
+		    		        <div class="main_content">
+		    			        <div class="post-thumbnail col-md-5">
+		    				        <div class="frame">
+		    					        <div class="post-format gallery">
+		    						        <span class="icon-quote-left">
+		    							        <i class= "fa fa-bookmark"></i>
+		    						        </span>
+		    					        </div>
+		    					        <a href="#"><img class= "img-responsive" src="img/global_focus.jpg" alt=""/></a>
+		    				        </div>
+		    				        <img class="hidden-xs post-shadow" src="img/post-shadow.png" alt=""/>
+		    			        </div>
+		    			        <div class="post-excerpt col-md-7">
+		    				        <h2 class="title">
+		    					        <a href="#">The most beautiful quotes ever</a>
+		    				        </h2>
+		    				        <div class="line-dotted"></div>
+		    				        <p>
+		    					        Diur apelligh to luriem rorde ist thuir quire contears foresa irmde narelair muiers lirguen luirem joires porfelas wateir ogespear pesae. Irmde gues narelair muiers lirguen luirem joires porf wateir ogeepear pesae. Diur tol apelligh to luriem rorde ist thuir quire contears foresa irmde narelair muiers lirguen luirem joires porfelas quie wateir ogespear pesae. Irmde gues narelair muiers lirguen luirem joires porf wateir ogeepear pesae.
+		    					        <a href="#">...Read more</a>
+		    				        </p> 
+		    				        <div class="line-dotted"></div>
+		    				        <p class="meta"><strong>Date:</strong> 14/February/2013 <strong>By:</strong> Zyanya Peredo <strong>In:</strong> <a href="#">Photography</a>, <a href="#">Print</a>, <a href="#">Design</a>
+		    				        </p>
+		    				        <div class= "line-dotted"></div>
+		    				        <div class= "post-share">
+		    					        <p>Share this post:</p>
+		    					        <ul>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Share in Facebook" class="facebook"><i class="fa fa-facebook"></i></a>
+		    						        </li>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Share in Twitter" class="twitter"><i class="fa fa-twitter"></i></a>
+		    						        </li>
+		    						        <li>
+		    							        <a href="#" data-toggle="tooltip" title="Share in Google +" class="google-plus">
+					        				        <i class="fa fa-google-plus"></i>
+					        			        </a>
+		    						        </li>
+		    					        </ul>	
+		    				        </div>
+		    			        </div>
+		    		        </div>
+		    	        </div>
+	    		        <div class= "row">
+	    			        <div class= "col-md-6 col-md-offset-3 text-center">
+	    				        <ul class="pagination">
+							        <li class="disabled"><a href="#">>></a></li>
+							        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+						  	        <li><a href="#">2</a></li>
+						  	        <li><a href="#">3</a></li>
+						  	        <li><a href="#">4</a></li>
+						  	        <li><a href="#">5</a></li>
+						  	        <li><a href="#">>></a></li>
+						        </ul>
+	    			        </div>
+	    		        </div>
+                    </div>	</section>
+                <section id= "testimonial" style="display: none;">
+	    	        <div class= "container">
+	    		        <div class= "row text-center" id= "heading">
+	    			        <div class= "bg-image col-md-12">
+	    				        <div class= "col-md-6 col-md-offset-3" id= "heading-text">
+		        			        <h3>Testimonials</h3>
+		                	        <p>Their satisfication, Our inspiration.</p>
+		                	        <hr class= "full">
+		                	        <br/>
+		        		        </div>
+	    			        </div>
+	    		        </div>
+	    		        <div class= "row main_content">
+	    			        <div class= "col-md-6 col-md-offset-3">
+	    				        <div id="client-speech" class="owl-carousel owl-theme">
+							        <div class="item">
+								        <div class= "row">
+									        <div class= "col-md-6 col-md-offset-3">
+										        <img class= "img-circle img-responsive center-block" src="img/client1.png">
+									        </div>	
+									        <div class= "col-md-12">
+										        <p class= "client-comment text-center">
+											        When you form a team, why do you try to form a team? Because teamwork builds trust and trust builds speed.
+										        </p>
+									        </div>
+								        </div>
+								        <div class= "row text-center">
+									        <p class= "client-name text-center"> ----- Noona Nuengthida Sophon</p>
+								        </div>
+							        </div>
+							        <div class="item">
+								        <div class= "row">
+									        <div class= "col-md-6 col-md-offset-3">
+										        <img class= "img-circle img-responsive center-block" src="img/client2.jpg">
+									        </div>
+									        <div class= "col-md-12">
+										        <p class= "client-comment text-center">
+											        I am constantly being asked about individuals. The only way to win is as a team. Football is not about one or two or three star players.
+										        </p>
+									        </div>
+								        </div>
+								        <div class= "row text-center">
+									        <p class= "client-name">-----Md. Aminul Islam Bhuiyan</p>
+								        </div>
+							        </div>
+							        <div class="item">
+								        <div class= "row">
+									        <div class= "col-md-6 col-md-offset-3">
+										        <img class= "img-circle img-responsive center-block" src="img/client3.png">
+									        </div>
+									        <div class="col-md-12">
+										        <p class= "client-comment text-center">
+											        Individual commitment to a group effort- that is what makes a team work, a company work, a society work, a civilisation work.
+										        </p>
+									        </div>
+								        </div>
+								        <div class= "row text-center">
+									        <p class= "client-name">-----  Jenifar Pink</p>
+								        </div>
+							        </div>
+						        </div>
+	    			        </div>
+	    		        </div>
+	    	        </div>	
+	            </section>	<section id= "contact">
+	    	<div class= "container">
+				<div class="row text-center" id= "heading">
+					<div class= "bg-image">
+						<div class= "col-lg-6 col-lg-offset-3 share-text" id= "heading-text">
+							<h3 class="text-center">Stay Connected</h3>
+		                	<p>We want to connect people like you.</p>
+		                	<hr class= "full">
+		                	<br/>
+						</div>
+					</div>
+				</div>
+				<div class= "row text-center main_content">
+					<div class= "col-md-6 col-md-offset-3 text-center" style="display: none;">
+						<form method="post" action="#">
+							<div class= "form">
+								<div class="input-group margin-bottom-sm">
+	  								<span class="input-group-addon">
+	  									<i class="fa fa-user fa-fw"></i>
+	  								</span>
+								 	<input class="form-control" type="text" placeholder="Name" required>
+								</div>
+								<div class="input-group margin-bottom-sm">
+	  								<span class="input-group-addon">
+	  									<i class="fa fa-envelope-o fa-fw"></i>
+	  								</span>
+								 	<input class="form-control" type="text" placeholder="Email address" required>
+								</div>
+								<div class="input-group margin-bottom-sm">
+	  								<span class="input-group-addon">
+	  									<i class="fa fa-tags fa-fw"></i>
+	  								</span>
+								 	<input class="form-control" type="text" placeholder="Subject">
+								</div>
+							</div>
+							<div class="input-group margin-bottom-sm">
+									<span class="input-group-addon">
+										<i class="fa fa-comment-o fa-fw"></i>
+									</span>
+								<textarea class="form-control" rows="6" type= "text" placeholder="Your Message" required></textarea>
+							</div>
+							<input class="btn btn-primary send" type="submit" value="Send Message">
+						</form>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center contact-tile" style="margin-top: 20px;">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <i class="fa fa-envelope fa-3x" style="color: #1abc9c;"></i>
+                                <h4 style="margin-top: 10px;">Email Us</h4>
+                                <p><a href="mailto:info@quintechs.com">info@quintechs.com</a></p>
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-linkedin-square fa-3x" style="color: #0077B5;"></i> <h4 style="margin-top: 10px;">LinkedIn Profile</h4>
+                                <p><a href="https://www.linkedin.com/company/quintechs/" target="_blank">Connect with us</a></p> </div>
+                            <div class="col-sm-12" style="margin-top: 20px;">
+    							<i class="fa fa-map-marker fa-3x" style="color: #FF5733;"></i>
+    							<h4 style="margin-top: 10px;">Office Locations</h4>
+    							<p>
+        						<strong>Jordan:</strong><br>
+        							1st Floor, Khalda Center, Amir Ibn Malik St., Amman
+    							</p>
+    							<p>
+        							<strong>USA:</strong><br>
+        							21263 Long View, Frankfort, IL 60423, USA
+    							</p>
+							</div>
+                        </div>
+					</div>
+					<div class= "col-md-6 col-md-offset-3 text-center" style="display: none;">
+						<ul class="socials-icons">
+							<li>
+								<a href="#" data-toggle="tooltip" title="Share in Facebook" class="facebook"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="#" data-toggle="tooltip" title="Share in Twitter" class="twitter"><i class="fa fa-twitter"></i></a>
+							</li>
+							<li>
+								<a href="#" data-toggle="tooltip" title="Share in Google +" class="google-plus"><i class="fa fa-google-plus"></i></a>
+							</li>
+							<li>
+								<a href="#" data-toggle="tooltip" title="Share in Instagram" class="instagram"><i class="fa fa-instagram"></i></a>
+							</li>
+							<li>
+								<a href="#" data-toggle="tooltip" title="Connect with Skype" class="skype"><i class="fa fa-skype"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	    </section>	
+			<style>
+/* 1. Default state: Dimmed gray color for both social icons (slightly lighter than text color) */
+.social-icons-footer a {
+    color: #888 !important; /* Dimmed gray color for effect */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* 2. Hover state: Social Icons (LinkedIn Blue & Microsoft Blue) */
+.social-icons-footer a[title="LinkedIn Profile"]:hover {
+    color: #0077B5 !important; 
+}
+.social-icons-footer a[title="Microsoft Partner Profile"]:hover {
+    color: #0078D7 !important; 
+}
+
+/* 3. Hover state: All Footer Links (Links section and Email/Phone links) - Changes link color to White */
+.col-md-3 ul a:hover,
+.col-md-3 p a:hover {
+    color: #fff !important; 
+}
+</style>
+
+<section id= "footer" class= "main-footer">
+    <div class="container">
+        <div class="row" style="padding-top: 30px; padding-bottom: 30px; text-align: left;">
+            
+            <div class="col-md-6 col-sm-12">
+                <h3 style="color: #f0f0f0; margin-top: 0; margin-bottom: 20px; font-size: 20px;">Quintechs Information Technology</h3>
+                
+                <p style="color: #777; margin-bottom: 25px; font-size: 14px;">
+                    We are dedicated Microsoft Partners, delivering innovative solutions in Information Technology, Dynamics 365, Power Platform, and Cloud Services to drive digital success for businesses globally.
+                </p>
+                <div class="social-icons-footer" style="display: flex; align-items: center;">
+                    <a href="https://www.linkedin.com/company/quintechs/" target="_blank" style="font-size: 24px; margin-right: 15px; display: inline-block; line-height: 1;" data-toggle="tooltip" title="LinkedIn Profile">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://marketplace.microsoft.com/en-us/marketplace/partner-dir/2f887acf-d89c-4740-bc62-e2f9807ab0a8/overview" target="_blank" style="font-size: 24px; margin-right: 15px; display: inline-block; line-height: 1;" data-toggle="tooltip" title="Microsoft Partner Profile">
+                        <i class="fa fa-windows"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-12" style="padding-left: 30px;">
+                <h3 style="color: #f0f0f0; margin-top: 0; margin-bottom: 20px; font-size: 20px;">Contact Information</h3>
+                
+                <p style="color: #777; margin-bottom: 15px; font-size: 14px;">
+                    <i class="fa fa-map-marker" style="margin-right: 10px; color: #FF5733;"></i>
+                    Khalda Center, Amir Ibn Malik St., Amman, Jordan
+                </p>
+                
+                <p style="color: #777; margin-bottom: 15px; font-size: 14px;">
+                    <i class="fa fa-phone" style="margin-right: 10px; color: #3498db;"></i>
+                    <a href="tel:+962797226030" style="color: #777; text-decoration: none; display: inline;">+962 79722 6030</a>
+                </p>
+
+                <p style="color: #777; font-size: 14px;">
+                    <i class="fa fa-envelope-o" style="margin-right: 10px; color: #1abc9c;"></i>
+                    <a href="mailto:info@quintechs.com" style="color: #777; text-decoration: none; display: inline; font-size: 14px;">info@quintechs.com</a>
+                </p>
+            </div>
+
+            <div class="col-md-3 col-sm-12" style="padding-left: 30px;">
+                <h3 style="color: #f0f0f0; margin-top: 0; margin-bottom: 20px; font-size: 20px;">Links</h3>
+                <ul style="padding: 0; list-style-type: none;">
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#about" style="color: #777; text-decoration: none; display: block; font-size: 14px;">About Us</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#our_service" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Our Services</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#our_products" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Our Products</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#team" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Technologies</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="#contact" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Contact Us</a></li>
+                    <li style="display: block !important; margin-bottom: 5px;"><a href="/privacy" style="color: #777; text-decoration: none; display: block; font-size: 14px;">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class= "row" style="border-top: 1px solid #333; padding-top: 15px; padding-bottom: 5px; margin-left: 0; margin-right: 0;">
+        <div class= "col-xs-12 copyright text-center">
+            <p style="color: #777; margin-bottom: 5px; font-size: 14px;">
+                Copyright &copy;2025. All rights reserved.
+            </p>
+            <p style="color: #777; font-size: 14px;">
+                جميع الحقوق محفوظة &copy;2025 لدى شركة الحلول الكبرى لتكنولوجيا المعلومات ذات مسؤولية محدودة
+            </p>
+        </div>
+    </div>
+</section>
+		<script>
+			$(document).ready(function() {
+  				$("#client-speech").owlCarousel({
+  					autoPlay: 3000,
+      				navigation : false, // Show next and prev buttons
+      				slideSpeed : 700,
+      				paginationSpeed : 1000,
+      				singleItem:true
+  				});
+			});
+		</script>
+		<script>
+ 			// Removed: new WOW().init();
+            // This line disables the WOW.js library, which handles scroll-based animations
+		</script>
+		<script>
+			$( function() {
+				  // init Isotope
+			  	var $container = $('.isotope').isotope
+			  	({
+				    itemSelector: '.element-item',
+				    layoutMode: 'fitRows'
+			  	});
+
+
+  				// bind filter button click
+  				$('#filters').on( 'click', 'button', function() 
+  				{
+				    var filterValue = $( this ).attr('data-filter');
+				    // use filterFn if matches value
+				    $container.isotope({ filter: filterValue });
+				 });
+  
+			  // change is-checked class on buttons
+			  	$('.button-group').each( function( i, buttonGroup ) 
+			  	{
+			    	var $buttonGroup = $( buttonGroup );
+			    	$($buttonGroup).on( 'click', 'button', function() 
+			    	{
+			      		$buttonGroup.find('.is-checked').removeClass('is-checked');
+			      		$( this ).addClass('is-checked');
+			    	});
+			  	});
+			  
+			});
+		</script>
+        <script src="js/jquery-ui-1.10.3.min.js"></script>
+        <script src="js/jquery.knob.js"></script>
+        <script src="js/daterangepicker.js"></script>
+        <script src="js/bootstrap3-wysihtml5.all.min.js"></script>
+        <script src="js/dashboard.js"></script>
+        <style>
+#msFormModal {
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  z-index:99999;
+}
+#msFormModal .modal-box {
+  background:#fff;
+  width:90%;
+  max-width:780px;
+  height:85vh;
+  margin:4% auto;
+  border-radius:12px;
+  padding:0;
+  overflow:hidden;
+  animation:fadeIn .25s ease;
+}
+#msFormModal iframe {
+  width:100%;
+  height:100%;
+  border:0;
+}
+.closeMsForm {
+  position:absolute;
+  top:10px;
+  right:20px;
+  font-size:28px;
+  font-weight:bold;
+  cursor:pointer;
+  color:#333;
+  z-index:10;
+}
+@keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
+</style>
+
+<div id="msFormModal">
+  <div class="modal-box">
+    <span class="closeMsForm" onclick="closeMicrosoftForm()">×</span>
+    <iframe src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=z3qIL5zYQEe8YuL5gHqwqNtTzjOAj05AuK3wK7n4tjtUQzg5NUMzREUxQVFDUFdIS1NKVEZaV0M3Si4u&embed=true"></iframe>
+  </div>
+</div>
+
+<script>
+function openMicrosoftForm(){
+  document.getElementById('msFormModal').style.display='block';
+}
+function closeMicrosoftForm(){
+  document.getElementById('msFormModal').style.display='none';
+}
+window.onclick=function(e){
+  if(e.target==document.getElementById('msFormModal')) closeMicrosoftForm();
+}
+</script>
+
+</body>
+
+<style>
+  .demo-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(135deg, #0078D7, #00AEEF);
+    color: #fff;
+    padding: 15px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 9999;
+  }
+  .demo-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.3);
+    cursor: pointer;
+  }
+</style>
+
+<style>
+  #demoModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 10000;
+  }
+  #demoModal .modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 500px;
+    margin: 8% auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease;
+  }
+  @keyframes fadeIn { from { opacity:0; transform: scale(0.95);} to {opacity:1; transform: scale(1);} }
+  .close-btn {
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+</style>
+
+<a href="#" class="demo-btn" onclick="openMicrosoftForm()">Request a Demo</a>
+
+	</body></html>
